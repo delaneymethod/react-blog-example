@@ -32,9 +32,7 @@ class FullPost extends Component {
 	deletePost = () => {
 		axios
 			.delete(`/posts/${this.state.loadedPost.id}`)
-			.then(response => {
-				console.log(response);
-			});
+			.then(response => response);
 	};
 
 	render() {
